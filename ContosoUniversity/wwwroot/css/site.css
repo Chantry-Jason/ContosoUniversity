@@ -1,0 +1,146 @@
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: Montserrat;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgba(208, 184, 146, 0.5);
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+.jumbotron {
+    background-image: url("../images/headerImg.jpg");
+    background-color: aqua;
+    background-size: cover;
+
+}
+.jumbotron h1 {
+    color: bisque;
+    text-shadow: 2px 2px #808099;
+   
+}
+.navbar {
+    background-color: darkslateblue;
+}
+.smallImages {
+    width: 70%;
+    height: auto;
+    border: 2px solid darkred;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+.col-md-4  {
+    width: 80%;
+}
+.homeRow {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.home-col {
+    display: block;
+    /*flex-direction: row;
+    flex: 1;*/
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+.homeBtn {
+    display: block;
+    background-color: darkred;
+    border: 1px solid darkslateblue;
+    border-radius: 5px;
+    box-shadow: 0 0 5px blue;
+    color: white;
+    font-size: 18px;
+    height: 40px;
+    width: 250px;
+    text-align: center;
+    padding-top: 6px;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.homeBtn:hover {
+    background-color: brown;
+    color: lightyellow;
+}
+.homeBtn:link {
+    text-decoration: none;
+}
+.homeBtn:visited {
+    text-decoration: none;
+}
+footer {
+    text-align: center;
+}
+footer p{
+    margin-top: -5px;
+}
+footer h3 {
+    font-size: 16pt;
+    margin-top: -10px;
+}
+
+/*For larger screens*/
+@media screen and (min-width: 992px) {
+    .homeBtn {
+
+        margin: 0;
+    }
+    .col-md-4 {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: auto;
+        
+    }
+    .row {
+        margin: 0;
+        
+    }
+    .homeRow {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+    }
+
+    .home-col {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding: 5px;
+    }
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}

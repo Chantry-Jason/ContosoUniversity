@@ -1,0 +1,50 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Contoso University - Home";
+}
+
+<div class="jumbotron">
+    <h1>Enrollment</h1>
+</div>
+
+<div class="homeRow">
+    <div class="home-col">
+        <h2>Welcome to Contoso University</h2>
+        <p>
+            Welcome to Contoso University's Enrollment page. From here you can create, edit, view, or delete student, instructor, department, or course content.
+        </p>
+        <a class="homeBtn" href="/Instructors">Manage Instructors</a><br />
+        @*<a class="homeBtn" href="/Instructors/Create"> >> Add a new instructor &raquo;</a><br />*@
+        <a class="homeBtn" href="/Students">Manage Students </a><br />
+        @*<a class="homeBtn" href="/Students/Create"> - Add a new student &raquo;</a><br />*@
+        <a class="homeBtn" href="/Courses">Manage Courses </a><br />
+       @* <a class="homeBtn" href="/Courses"> - Add a course &raquo;</a><br />*@
+        <a class="homeBtn" href="/Departments">Manage Departments </a><br />
+        @*<a class="homeBtn" href="/Departments/Create"> - Add a new department &raquo;</a><br />*@
+
+    </div>
+    <div class="home-col">
+        <h2>New Instructors</h2>
+        <p>Enter new instructors in the Instructors tab above, or click the link below.</p>
+        <p>
+            <a class="btn btn-default"
+               href="/Instructors/Create">
+                Instructors &raquo;
+            </a>
+        </p>
+    </div>
+    <div class="home-col">
+        <h2>Welcome Dr. Jenkins</h2>
+        <p>Dean of Administration</p>
+        <img src="~/images/DrBilboJenkinsDeanOfAdministration.jpg" title="Dr. Bilbo Jenkins new Dean of Administration at Contoso University" alt="Dr. Bilbo Jenkins" class="smallImages" />
+        <p>Contoso would like to welcome Dr. Bilbo Jenkins as the Dean of Administration. Dr. Jenkins comes to us from Brigham Young University in Provo, Utah where he was also the Dean of Administration.</p>
+        <p>We are excited for the experience he brings with him.</p>
+        <p>
+            <a class="btn btn-default"
+               href="mailto: bjenkins@contoso.edu">
+                E-Mail Dr. Jenkins &raquo;
+            </a>
+        </p>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+﻿@page
+@model ContosoUniversity.Pages.AboutModel
+
+@{
+    ViewData["Title"] = "About Us";
+}
+
+<h2>About Us</h2>
+
+<h3>Contoso University Webpage Design by Jason Chantry.</h3>
+<p>
+    <span>1232 5th Street</span>
+    <span>Ogden, Utah 84404</span>
+    
+</p>
+<p>E-Mail: jason.chantry@gmail.com</p>
+<p>Phone: (801)388-5359</p>
+
+@*<table>
+    <tr>
+        <th>
+            Enrollment Date
+        </th>
+        <th>
+            Students
+        </th>
+    </tr>
+
+    @foreach (var item in Model.Student)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EnrollmentDate)
+            </td>
+            <td>
+                @item.StudentCount
+            </td>
+        </tr>
+    }
+</table>*@
